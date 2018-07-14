@@ -20,10 +20,6 @@ social:
     - icon: fa-github
       link: "https://github.com/vzrenggamani"
 
-share:
-  twitter_username: -
-  fb_appid: -
-
 urls:
     - text: Tentang Kita
       url: /about/
