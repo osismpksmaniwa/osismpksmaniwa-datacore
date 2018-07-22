@@ -11,4 +11,5 @@ before_script:
   - npm install
 
 script:
+  - cd functions && npm install && cd ..
   - firebase deploy --token $FIREBASE_TOKEN
