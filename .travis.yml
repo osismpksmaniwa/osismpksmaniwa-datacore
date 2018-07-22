@@ -1,4 +1,14 @@
-deploy:
-  provider: firebase
-  token:
-    secure: GOTRL4xqeULLMVNuPGc3xziMn9FcqF2WjKA9djpHpTCbZQ05d24QE6i6ISfxe+o/74T4vPv+z64XxtukWoaQPkejnHbaAGpmVwrApCED+wcOVMPKIAXUBEXN7nbZnWX/HVNbe7AlsoXAS9qtIM6cEisIsGaG95nEo0NlUkOzcCZGMlpCoCnoP4l9QCg4JsTyH4DUzCYSH1xonxka7/Z+TC7uEBkisvHBrmVQ2mBBJaAXDyb3tnUK8bhZxyBV8SjrE8yYwiR8gmyyD67jiBaNrOSM8tGmAfNr4CEKiaFdWrXZIVyur6JItwJlphTnAQeAfGNx54dOzk8hhHdEcWrMN+T1hOb4e7tqJpsJOWTmIGv0Q2jROMJZjPAdW7g7qPfspPRtAwMGSh5bWnNYToOHP/ARJaQNrMdWaahsiB4m9Lcmh4lfoJVUCwO9FQWhRkK62hBbjt/zayc/Eeg1M3XCO6MhW9A4jKwwufPD7oqBUkPBTg+KqC8k52bIzq0ZUDActgZdNT0euP9keBS/xMd4i6Oxd3tpL4weaYCZjIHQ+EH4VQRYmEVMv8GfbXl6/Z5WX+0Hlcfq28fs5OeMqcmIkv6iLVi4uBj5OLnJT3PE/neU6nDhUHGHmSf5n8yYiiyMCtYCNCfsf9wo9Ku0URfX+jg8Q67QiUFAAKLmurvWof0=
+language: node_js
+node_js:
+  - "8"
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g firebase-tools
+  - npm install
+
+script:
+  - firebase deploy --token $FIREBASE_TOKEN
