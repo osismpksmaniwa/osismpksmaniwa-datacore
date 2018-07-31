@@ -2,8 +2,13 @@ environment:
   nodejs_version: "6"
 
 only_commits:
-  message: /[bveyor]/
+  message: /[deploy]/
+  
+environment:
+  DEPLOY_TOKEN:
+    secure: epNSsEceKy4M873j7s2rHIgXmOu3jaCwqkQkH+NbPNRGcmHBkFOA8Rp+d+4UyPcK
 
+skip_branch_with_pr: true
 
 branches:
   only:
@@ -20,4 +25,4 @@ before_test:
 
 
 test_script:
-  - firebase deploy --token %FIREBASE_TOKEN%
+  - firebase deploy --token %DEPLOY_TOKEN%
