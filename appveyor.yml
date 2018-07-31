@@ -1,6 +1,11 @@
 environment:
   nodejs_version: "6"
 
+only_commits:
+  message: /[deploy]/
+
+skip_branch_with_pr: true
+
 branches:
   only:
   - master
@@ -16,4 +21,4 @@ before_test:
 
 
 test_script:
-  - firebase deploy --token %FIREBASE_TOKEN%
+- firebase deploy -P deploy --token %DEPLOY_TOKEN%

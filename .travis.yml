@@ -12,4 +12,4 @@ before_script:
 
 script:
   - cd functions && npm install && cd ..
-  - firebase deploy --token $FIREBASE_TOKEN
+  - firebase deploy -P staging --token $FIREBASE_TOKEN
