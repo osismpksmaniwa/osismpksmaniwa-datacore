@@ -5,10 +5,9 @@ branches:
   only:
   - master
 
+build: off
+
 install:
-  - echo ==============
-  - echo START INSTALLING DEPENDENCIES
-  - echo ==============
   - ps: Install-Product node $env:nodejs_version
 
 before_test:
