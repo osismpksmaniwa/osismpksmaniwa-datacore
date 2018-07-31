@@ -2,7 +2,7 @@ environment:
   nodejs_version: "6"
 
 environment:
-  FIREBASE_TOKEN:
+  DEPLOY_TOKEN:
     secure: epNSsEceKy4M873j7s2rHIgXmOu3jaCwqkQkH+NbPNRGcmHBkFOA8Rp+d+4UyPcK
 
 branches:
@@ -20,4 +20,4 @@ before_test:
 
 
 test_script:
-  - firebase deploy --token %FIREBASE_TOKEN%
+  - firebase deploy --token %DEPLOY_TOKEN%
