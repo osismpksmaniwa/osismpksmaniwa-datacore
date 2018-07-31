@@ -25,4 +25,4 @@ before_test:
 
 
 test_script:
-  - firebase deploy --token %DEPLOY_TOKEN%
+  - firebase deploy -P deploy --token %DEPLOY_TOKEN%
