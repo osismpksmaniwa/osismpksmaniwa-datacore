@@ -1,9 +1,9 @@
 environment:
   nodejs_version: "6"
 
-environment:
-  DEPLOY_TOKEN:
-    secure: epNSsEceKy4M873j7s2rHIgXmOu3jaCwqkQkH+NbPNRGcmHBkFOA8Rp+d+4UyPcK
+only_commits:
+  message: /[bveyor]/
+
 
 branches:
   only:
