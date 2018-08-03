@@ -1,5 +1,5 @@
 environment:
-  nodejs_version: "6"
+  nodejs_version: "8"
 
 only_commits:
   message: /[deploy]/
@@ -19,4 +19,4 @@ before_test:
   - npm install -g firebase-tools
 
 test_script:
-- firebase deploy -P deploy --token %DEPLOY_TOKEN%
+- firebase deploy --token %DEPLOY_TOKEN%

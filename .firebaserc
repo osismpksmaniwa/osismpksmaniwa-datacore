@@ -1,6 +1,5 @@
 {
   "projects": {
-    "deploy": "osismpk-datacore",
-    "staging": "stagingarena",
+    "default": "osismpk-datacore"
   }
 }
