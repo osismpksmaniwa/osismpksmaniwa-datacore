@@ -61,3 +61,7 @@ typings/
 .next
 
 /sandbox
+
+# unused html
+elements.html
+generic.html
