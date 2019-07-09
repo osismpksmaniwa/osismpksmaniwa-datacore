@@ -1,0 +1,12 @@
+{
+  "name": "osismpksmaniwa",
+  "short_name": "SMANIWA Boards",
+  "icons": {
+    "src": "images/fox-icon.png",
+    "type": "image/png"
+  },
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "theme-color": "white"
+}
