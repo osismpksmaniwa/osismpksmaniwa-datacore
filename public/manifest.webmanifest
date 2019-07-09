@@ -11,5 +11,5 @@
     ],
     "name": "OSISMPKSMANIWA INFO",
     "short_name": "Info OSISMPK",
-    "start_url": "index.html"
+    "start_url": "/index.html"
 }
