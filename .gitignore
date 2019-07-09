@@ -65,7 +65,4 @@ typings/
 # unused html
 elements.html
 generic.html
-*.jpg
-*.png
-*.jpeg
 *.bat
