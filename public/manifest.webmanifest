@@ -1,0 +1,15 @@
+{
+    "background_color": "pink",
+    "description": "Show our board pages",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "images/fox-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "OSISMPKSMANIWA INFO",
+    "short_name": "Info OSISMPK",
+    "start_url": "index.html"
+}
