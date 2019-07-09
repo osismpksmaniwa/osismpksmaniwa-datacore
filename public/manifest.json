@@ -1,12 +1,12 @@
 {
-  "name": "osismpksmaniwa",
+  "name": "OSISMPK SMANIWA Boards",
   "short_name": "SMANIWA Boards",
   "icons": {
-    "src": "images/fox-icon.png",
-    "type": "image/png"
-  },
+    "src": "images/hello-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+  "lang": "en-US",
   "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "black",
-  "theme-color": "white"
+  "display": "standalone"
 }
